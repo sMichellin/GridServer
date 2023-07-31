@@ -42,6 +42,8 @@
             <version>2.0.7</version>
             <scope>test</scope>
         </dependency>
+
+
         <dependency>
             <groupId>io.opentelemetry</groupId>
             <artifactId>opentelemetry-exporter-jaeger</artifactId>

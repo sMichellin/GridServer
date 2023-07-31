@@ -13,7 +13,7 @@ public class SeleniumGridTest {
     public static void main(String[] args) {
         try {
             ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.setCapability("browserVersion", "114.0.5735.248");
+          //chromeOptions.setCapability("browserVersion", "*");
             chromeOptions.setCapability("platformName", "Windows");
 // Showing a test name instead of the session id in the Grid UI
             chromeOptions.setCapability("se:name", "My simple test");
@@ -26,7 +26,7 @@ public class SeleniumGridTest {
 
             chromeOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
 
-
+            System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\WebDriver\\chromedriver.exe");
             WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/"), chromeOptions);
 
 
